@@ -32,7 +32,6 @@
     age: number;
   }
  
-  // User now has both name and age
   const user: User = { name: "Sara", age: 25 };
 ```
  

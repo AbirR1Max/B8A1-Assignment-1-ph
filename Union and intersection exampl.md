@@ -7,7 +7,6 @@ type Admin = { role: "admin"; permissions: string[] };
 type Guest = { role: "guest"; expiresAt: Date };
 type WithId = { id: number; name: string };
 
-// Union (|) picks the kind, intersection (&) adds shared fields
 type User = (Admin | Guest) & WithId;
 
 function describe(user: User): string {
